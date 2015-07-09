@@ -1,0 +1,75 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.6
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Users\\aafergus\\node\\how-to-npm',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\aafergus\AppData\Roaming\npm-cache\@fryingfishes\how-to-npm\1.0.1\package.tgz not in flight; packing
+9 verbose tar pack [ 'C:\\Users\\aafergus\\AppData\\Roaming\\npm-cache\\@fryingfishes\\how-to-npm\\1.0.1\\package.tgz',
+9 verbose tar pack   'C:\\Users\\aafergus\\node\\how-to-npm' ]
+10 verbose tarball C:\Users\aafergus\AppData\Roaming\npm-cache\@fryingfishes\how-to-npm\1.0.1\package.tgz
+11 verbose folder C:\Users\aafergus\node\how-to-npm
+12 info prepublish @fryingfishes/how-to-npm@1.0.1
+13 verbose addLocalTarball adding from inside cache C:\Users\aafergus\AppData\Roaming\npm-cache\@fryingfishes\how-to-npm\1.0.1\package.tgz
+14 silly cache afterAdd @fryingfishes/how-to-npm@1.0.1
+15 verbose afterAdd C:\Users\aafergus\AppData\Roaming\npm-cache\@fryingfishes\how-to-npm\1.0.1\package\package.json not in flight; writing
+16 verbose afterAdd C:\Users\aafergus\AppData\Roaming\npm-cache\@fryingfishes\how-to-npm\1.0.1\package\package.json written
+17 silly publish { name: '@fryingfishes/how-to-npm',
+17 silly publish   version: '1.0.1',
+17 silly publish   description: 'tutorial',
+17 silly publish   main: 'index.js',
+17 silly publish   scripts: { test: 'node test.js' },
+17 silly publish   repository:
+17 silly publish    { type: 'git',
+17 silly publish      url: 'git+https://github.com/fryingfishes/how-to-npm.git' },
+17 silly publish   keywords: [ 'tutorial', 'npm' ],
+17 silly publish   author: { name: 'A. Charles Ferguson' },
+17 silly publish   license: 'ISC',
+17 silly publish   bugs: { url: 'https://github.com/fryingfishes/how-to-npm/issues' },
+17 silly publish   homepage: 'https://github.com/fryingfishes/how-to-npm#readme',
+17 silly publish   dependencies: { '@linclark/pkg': '^1.0.2' },
+17 silly publish   devDependencies: {},
+17 silly publish   readme: 'Package for tutorial how-to-npm by @linclark',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '5c38577eba64a87e53f48b2e9a2b9183ca7f7723',
+17 silly publish   _id: '@fryingfishes/how-to-npm@1.0.1',
+17 silly publish   _shasum: 'bc284aed79b769ca0d5326364384adddacc4ed6b',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name @fryingfishes/how-to-npm
+20 silly mapToRegistry scope (from package name) @fryingfishes
+21 verbose mapToRegistry no registry URL found in name for scope @fryingfishes
+22 silly mapToRegistry using default registry
+23 silly mapToRegistry registry http://localhost:15443/
+24 silly mapToRegistry uri http://localhost:15443/@fryingfishes%2fhow-to-npm
+25 verbose publish registryBase http://localhost:15443/
+26 silly publish uploading C:\Users\aafergus\AppData\Roaming\npm-cache\@fryingfishes\how-to-npm\1.0.1\package.tgz
+27 verbose stack Error: auth required for publishing
+27 verbose stack     at CachingRegistryClient.publish (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\publish.js:30:14)
+27 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:134:14
+27 verbose stack     at mapToRegistry (C:\Program Files\nodejs\node_modules\npm\lib\utils\map-to-registry.js:55:3)
+27 verbose stack     at publish_ (C:\Program Files\nodejs\node_modules\npm\lib\publish.js:104:3)
+27 verbose stack     at Array.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\bind-actor.js:15:8)
+27 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:15:14)
+27 verbose stack     at LOOP (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:14:28)
+27 verbose stack     at chain (C:\Program Files\nodejs\node_modules\npm\node_modules\slide\lib\chain.js:20:5)
+27 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\publish.js:73:5
+27 verbose stack     at RES (C:\Program Files\nodejs\node_modules\npm\node_modules\inflight\inflight.js:23:14)
+28 verbose cwd C:\Users\aafergus\node\how-to-npm
+29 error Windows_NT 6.3.9600
+30 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+31 error node v0.12.6
+32 error npm  v2.11.2
+33 error code ENEEDAUTH
+34 error need auth auth required for publishing
+34 error need auth You need to authorize this machine using `npm adduser`
+35 verbose exit [ 1, true ]
