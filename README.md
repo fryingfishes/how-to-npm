@@ -1,0 +1,1 @@
+Package for tutorial how-to-npm by @linclark
